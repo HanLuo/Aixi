@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameServer", "GameServer\GameServer.vcxproj", "{4EB3716F-D6F0-49CE-9EFF-8E8C8567755D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoginServer", "GameServer\GameServer.vcxproj", "{4EB3716F-D6F0-49CE-9EFF-8E8C8567755D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DBServer", "DBServer\DBServer.vcxproj", "{635AF625-E260-4944-A0B2-3ED5F919BE46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4EB3716F-D6F0-49CE-9EFF-8E8C8567755D}.Debug|Win32.Build.0 = Debug|Win32
 		{4EB3716F-D6F0-49CE-9EFF-8E8C8567755D}.Release|Win32.ActiveCfg = Release|Win32
 		{4EB3716F-D6F0-49CE-9EFF-8E8C8567755D}.Release|Win32.Build.0 = Release|Win32
+		{635AF625-E260-4944-A0B2-3ED5F919BE46}.Debug|Win32.ActiveCfg = Debug|Win32
+		{635AF625-E260-4944-A0B2-3ED5F919BE46}.Debug|Win32.Build.0 = Debug|Win32
+		{635AF625-E260-4944-A0B2-3ED5F919BE46}.Release|Win32.ActiveCfg = Release|Win32
+		{635AF625-E260-4944-A0B2-3ED5F919BE46}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

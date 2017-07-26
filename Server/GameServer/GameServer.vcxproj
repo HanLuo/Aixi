@@ -40,7 +40,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>..\Contrib\Include\;$(IncludePath)</IncludePath>
+    <IncludePath>..\Contrib\Include\;..\..\Common\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -68,11 +68,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConnectManager.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerManager.cpp" />
     <ClCompile Include="SQLInterface.cpp" />
     <ClCompile Include="Thread.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Common\Packet.h" />
+    <ClInclude Include="..\..\Common\Socket.h" />
+    <ClInclude Include="..\..\Common\SocketInputStream.h" />
+    <ClInclude Include="..\..\Common\SocketOutputStream.h" />
+    <ClInclude Include="..\..\Common\Type.h" />
     <ClInclude Include="ConnectManager.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerManager.h" />
     <ClInclude Include="SQLInterface.h" />
     <ClInclude Include="Thread.h" />
   </ItemGroup>
