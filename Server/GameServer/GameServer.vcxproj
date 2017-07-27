@@ -74,6 +74,7 @@
     <ClCompile Include="Thread.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Common\BaseType.h" />
     <ClInclude Include="..\..\Common\Packet.h" />
     <ClInclude Include="..\..\Common\Socket.h" />
     <ClInclude Include="..\..\Common\SocketInputStream.h" />

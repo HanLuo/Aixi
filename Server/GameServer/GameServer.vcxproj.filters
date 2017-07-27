@@ -77,5 +77,8 @@
     <ClInclude Include="..\..\Common\SocketInputStream.h">
       <Filter>Common</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Common\BaseType.h">
+      <Filter>Common</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
