@@ -80,6 +80,13 @@ public:
 	virtual bool isLoginPlayer() = 0;
 	virtual bool isServerPlayer() = 0;
 
+	// 设置玩家的player id 由PlayerPool类分配出来的索引值
+	// playerid 用于表示一个客户端在整个系统中的数据位置信息
+	int getPlayerID() { return m_Playerid; }
+
+	void setPlayerID(int id) { m_Playerid = id; }
+
+
 private:
 	bool m_isEmpty;
 	bool m_isDisconnect;
@@ -99,7 +106,9 @@ protected:
 	Socket* m_pSocket;
 
 	// 输入输出数据缓存
+	SocketInputStream* m_pSocketInputStream;
 
+	SocketOutputStream* m_pSocketOutputStream;
 };
 
 #endif
