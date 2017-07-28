@@ -62,6 +62,44 @@ public:
 	virtual bool ProcessOutput();
 
 	virtual bool processCommand(bool option = true);
+
+	virtual bool heartBeat(unsigned int uTime = 0);
+
+	virtual bool sendPacket(Packet* pPacket);
+
+	// 加密
+	virtual void encrypt_S2C(char* header, unsigned int len, unsigned int beginplace) = 0;
+
+	// 解密
+	virtual void decryptHead_C2S(char* header) = 0;
+
+	virtual void decrypt_C2S(char* header, unsigned int len, unsigned int beginplace) = 0;
+
+public:
+	// 通用接口
+	virtual bool isLoginPlayer() = 0;
+	virtual bool isServerPlayer() = 0;
+
+private:
+	bool m_isEmpty;
+	bool m_isDisconnect;
+
+protected:
+	// Player id 统一由PlayerPool管理
+	int m_Playerid;
+
+	// User id
+	// 同意由UserPool管理
+	int m_Userid;
+
+	// 在PlayerManager类中player id数组的下标
+	int m_playerManagerid;
+
+	// 网络连接句柄
+	Socket* m_pSocket;
+
+	// 输入输出数据缓存
+
 };
 
 #endif
