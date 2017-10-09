@@ -1,2 +1,1 @@
-# Aixi
-GameServer About Ari
+# Aixi 
