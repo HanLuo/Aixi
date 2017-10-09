@@ -64,6 +64,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Observer.h" />
+    <ClInclude Include="Subject.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Subject.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
