@@ -28,6 +28,9 @@
     <Filter Include="Common">
       <UniqueIdentifier>{1f60fe7d-6248-4dbb-89d2-83b2075bc0bd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Common\Net">
+      <UniqueIdentifier>{487e99f9-0d7e-4a67-b8fb-9d298836bf86}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Thread.cpp">
@@ -44,6 +47,9 @@
     </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketAPI.cpp">
+      <Filter>Common\Net</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -71,14 +77,17 @@
     <ClInclude Include="..\..\Common\Packet.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Common\Socket.h">
-      <Filter>Common</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Common\SocketInputStream.h">
       <Filter>Common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Common\BaseType.h">
       <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Socket.h">
+      <Filter>Common\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketAPI.h">
+      <Filter>Common\Net</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
