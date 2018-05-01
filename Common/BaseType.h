@@ -1,4 +1,8 @@
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <iostream>
+
 
 // 根据指针删除内存
 void safe_delete(void* ptr)
