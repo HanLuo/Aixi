@@ -51,6 +51,9 @@
     <ClCompile Include="SocketAPI.cpp">
       <Filter>Common\Net</Filter>
     </ClCompile>
+    <ClCompile Include="FileAPI.cpp">
+      <Filter>Common\Net</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Thread.h">
@@ -87,6 +90,9 @@
       <Filter>Common\Net</Filter>
     </ClInclude>
     <ClInclude Include="SocketAPI.h">
+      <Filter>Common\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="FileAPI.h">
       <Filter>Common\Net</Filter>
     </ClInclude>
   </ItemGroup>

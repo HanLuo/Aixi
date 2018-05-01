@@ -70,6 +70,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ConnectManager.cpp" />
+    <ClCompile Include="FileAPI.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerManager.cpp" />
     <ClCompile Include="SocketAPI.cpp" />
@@ -84,6 +85,7 @@
     <ClInclude Include="..\..\Common\SocketOutputStream.h" />
     <ClInclude Include="..\..\Common\Type.h" />
     <ClInclude Include="ConnectManager.h" />
+    <ClInclude Include="FileAPI.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerManager.h" />
     <ClInclude Include="SocketAPI.h" />

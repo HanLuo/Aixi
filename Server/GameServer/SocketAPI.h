@@ -57,9 +57,9 @@ namespace SocketAPI
 	int recvfrom_ex(SOCKET s, void *buf, int len, int flags, struct sockaddr *from, int *fromlen);
 
 	// close
-	int closesocket_ex(SOCKET s);
+	bool closesocket_ex(SOCKET s);
 
-	bool ioctlsocket_ex(SOCKET s, long cmd, long *arg);
+	bool ioctlsocket_ex(SOCKET s, long cmd, unsigned long *arg);
 
 	bool getsocketnonblocking_ex(SOCKET s);
 
