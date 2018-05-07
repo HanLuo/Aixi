@@ -58,11 +58,13 @@ public:
 	Player(bool bIsServer = false);
 	~Player();
 
+public:
 	virtual bool processInput();
 	virtual bool ProcessOutput();
 
 	virtual bool processCommand(bool option = true);
-
+	
+	// 心跳函数
 	virtual bool heartBeat(unsigned int uTime = 0);
 
 	virtual bool sendPacket(Packet* pPacket);
@@ -85,6 +87,21 @@ public:
 	int getPlayerID() { return m_Playerid; }
 
 	void setPlayerID(int id) { m_Playerid = id; }
+
+	// 设置玩家uid接口，uid由userpool类分配出来的索引
+	// uid用于标识玩家的游戏存储位置信息
+	int getUserID() { return m_Userid; }
+
+	void setUserID(int uid) { m_Userid = uid; }
+
+	// 读取设置玩家PMID的接口，PlayerManagerID 是由PlayerManager类分配出来的索引值
+	// PlayerManagerID用于标识当前玩家所在的某个PlayerManager中的位置信息，每个
+	// PlayerManager位于一个独立的线程里。
+	int getPlayerManagerID() { return m_playerManagerid; }
+	void setPlayerManagerID(int playermanagerid) { m_playerManagerid = playermanagerid; }
+
+	// 获得当前玩家的socket类
+
 
 
 private:
